@@ -1,6 +1,6 @@
-This Arduino library has been written to allow easy use DS1307 based real time clock modules such as our RTC module HCMODU0011. The library also contains functions to read and write to EEPROM memory which is also included in this RTC module. Communication with the module is via the standard Arduino I2C interface on pins A4 (SDA) & A5 (SCL) for an Uno
+This Arduino library has been written to allow easy use DS1307 based real time clock modules such as our RTC module HCMODU0011. The library also contains functions to read and write to EEPROM memory which is also included in this RTC module. Communication with the module is via the standard Arduino I2C interface on pins A4 (SDA) & A5 (SCL) for an Arduino Uno or Micro.
 
-You will need to download (please log in to download the library) and unzip this library to the Arduino development environments library area
+You will need to download (please log in to download the library) and unzip this library to the Arduino development environments library area:
 
 On Windows: 
 My Documents\Arduino\libraries\
@@ -45,7 +45,7 @@ Or using the following string functions which return the time and date as a form
 HCRTC.GetTimeString()
 HCRTC.GetDateString()
 
-You cab connect the module to Arduino using this configuration:
+You can connect the module to Arduino using this configuration (standard I2C wiring):
 
 GND-Arduino GND
 Vcc-Arduino 5V
